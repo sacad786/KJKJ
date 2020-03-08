@@ -4,48 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <h1 id="title"> Survey Form</h1>
-    <div class="container">
-        <p>let us know how we can improve FreeCodeCamp</p>
-        <form>
-            <label>Name:</label>
-            <input type="text" placeholder="Enter your name">
-            <label>Email:</label>
-            <input type="email" placeholder="Enter your Email">
-            <label>age:</label>
-            <input type="number" placeholder="age">
+    <form>
+    <div class="row">
+        <div class="column1">
+        <label>Name:</label>
+                        <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="column1">
+        <label>Email:</label>
+                        <input type="email" placeholder="Enter your Email">
+          </div>
+          <div class="column1">
+        <label>age:</label>
+                        <input type="number" placeholder="age">
+          </div>
+        
+        <div class="column" >
             <label>Which option best describes your currnet role?</label>
-            <select>
-                <option value="Student">Student</option>
-                <option value="Jr.-Developer">Jr. Developer</option>
-                <option value="snr.-Developer">Snr. Developer</option>
-            </select>
-            <label>how likely is that you would recommend FreeCodeCamp to a freind?</label>
-            <input type="radio" id="Definitely">
-            <label for="Definitely" name="answer" value="Definitely">Definitely</label>
-            <input type="radio" id="Maybe">
-            <label for="Maybe" name="answer" value="Maybe">Maybe</label>
-            <input type="radio" id="Notsure">
-            <label for="Notsure" name="answer" value="Notsure">Not sure</label>
+          </div>
+          <div class="column">
+             <select>
+                            <option value="Student">Student</option>
+                            <option value="Jr.-Developer">Jr. Developer</option>
+                            <option value="snr.-Developer">Snr. Developer</option>
+                        </select>
+          </div>
+        <div class="column" >
+            <label>how likely is that you would recommend <br/> FreeCodeCamp to a freind?</label>
+          </div>
+          <div class="column">
+                            <input type="radio" id="Definitely">
+                        <label for="Definitely" name="answer" value="Definitely">Definitely</label><br/>
+                        <input type="radio" id="Maybe">
+                        <label for="Maybe" name="answer" value="Maybe">Maybe</label><br/>
+                        <input type="radio" id="Notsure">
+                        <label for="Notsure" name="answer" value="Notsure">Not sure</label><br/>
+          </div>
+        <div class="column" >
             <label>What do you like most in Fcc:</label>
+          </div>
+          <div class="column">
             <select>
-                <option value="Student">lessons</option>
-                <option value="Jr.-Developer">projects</option>
-                <option value="snr.-Developer">Certifications</option>
-            </select>
-            <label></label>
+                            <option value="Student">lessons</option>
+                            <option value="Jr.-Developer">projects</option>
+                            <option value="snr.-Developer">Certifications</option>
+                        </select>
+          </div>
+          <div class="column">
+            <label>Things taht should be improved in the future <br/> (check all that apply):</label>
+                        
+          </div>
+          <div class="column">
             <input type="checkbox">
-            <label>front-End projects</label>
-            <input type="checkbox">
-            <label>Baack-End projects</label>
-            <input type="checkbox">
-            <label>Data Visualization</label>
+                        <label>front-End projects</label><br/>
+                        <input type="checkbox">
+                        <label>Back-End projects</label><br/>
+                        <input type="checkbox">
+                        <label>Data Visualization</label>
+          </div>
+          
+        </div>
         </form>
-    </div>
+
 </body>
 
 </html>
